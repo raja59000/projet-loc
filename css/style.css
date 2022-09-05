@@ -1,0 +1,311 @@
+/*--------------------------- REGLAGE GENERAL --------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body {
+  width: 100%;
+}
+
+/*Fichier menu.php, footer_index.php, barre en dessous banner
+fond footer*/
+.bloc_haut,
+#footer_index,
+.bande_banner,
+#footer_general {
+  background-color: black;
+  height: 141px;
+}
+
+/* h1 pour fichier index.php et h2 pour les autres fichier*/
+h1,
+.banner h2,
+.h2_connexion {
+  position: relative;
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: black -5px 5px 10px;
+}
+/*------------------------ FIN REGLAGE GENERAL---------------------------------*/
+
+/*------------------------------- PAGE INDEX ---------------------------------*/
+/*TITRE*/
+h1 {
+  top: 225px;
+  left: 1010px;
+  font-size: 100px !important;
+}
+/* BOUTON CONNEXION */
+.connexion {
+  position: relative;
+  top: 225px;
+  left: 1084px;
+  background-color: rgb(13, 58, 142, 0.7);
+  border: 2px solid white;
+  border-radius: 40px !important;
+  padding: 10px 20px;
+  width: 208px !important;
+}
+/* BOUTON CONNEXION AU SURVOL ET CLAVIER*/
+.connexion:hover,
+.connexion:focus {
+  background-color: rgb(255, 255, 255, 0.5);
+  border: 2px solid rgb(13, 58, 142);
+}
+/*LIEN BOUTON CONNEXION*/
+.connexion a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*LIEN BOUTON CONNEXION AU SURVOL ET CLAVIER*/
+.connexion a:hover,
+.connexion a:focus {
+  color: rgb(13, 58, 142);
+}
+/*------------------------ FIN PAGE INDEX ------------------------------------*/
+
+/*-------------------------- PAGE CONNEXION ----------------------------------*/
+/*TITRE*/
+.h2_connexion {
+  top: 147px;
+  left: 403px;
+  font-size: 51px;
+}
+/*FORMULAIRE*/
+.formulaire_conn {
+  position: relative;
+  top: 100px;
+  left: 450px;
+  background-image: url("../img/fond-connexion.png");
+  background-size: cover;
+  border-radius: 20px;
+  height: 700px;
+  width: 1000px;
+}
+/*DIV ENGLOBE MON FORMULAIRE*/
+.boite_conn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  height: 700px;
+  margin-top: -69px;
+  width: 1000px;
+}
+/*PARTIE CHAMPS A REMPLIR*/
+.boite_conn form {
+  position: relative;
+  top: 190px;
+  left: 365px;
+  color: white;
+  font-size: 26px;
+  width: 400px;
+}
+/*CHAMPS*/
+.boite_conn input {
+  border-radius: 20px;
+  font-size: 14px;
+  height: 40px;
+  margin: 10px 0;
+  padding: 5px 20px;
+  width: 315px;
+}
+/*BOUTON CONNEXION*/
+#btn_conn {
+  background-color: rgb(13, 58, 142, 0.7);
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  margin: 25px 0 0 75px;
+  padding: 0px 20px;
+  width: 164px;
+}
+/*BOUTON CONNEXION AU SURVOL ET CLAVIER*/
+#btn_conn:hover,
+#btn_conn:focus {
+  background-color: rgb(255, 255, 255, 0.7);
+  border: 2px solid rgb(13, 58, 142);
+  color: rgb(13, 58, 142);
+}
+/*---------------------- FIN PAGE CONNEXION ----------------------------------*/
+
+/*------------------------------ MENU ----------------------------------------*/
+/*LOGO*/
+#logo {
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  float: left;
+  height: 80px;
+  width: 156px;
+  margin: 30px 0 0 100px;
+}
+/*BLOC BOUTON DECONNEXION*/
+#connecter {
+  color: white;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 40px 100px 0 0;
+  text-align: center;
+  width: 125px;
+}
+#connecter p {
+  margin: 0;
+}
+/* LIEN DU BOUTON DECONNEXION*/
+#connecter a {
+  color: white;
+  text-decoration: none;
+}
+/* LIEN DU BOUTON DECONNEXION AU SURVOL ET CLAVIER*/
+#connecter a:hover,
+#connecter a:focus {
+  color: mediumturquoise;
+}
+/*------------------------------ FIN MENU ------------------------------------*/
+
+/*--------------------------- PAGE ELEVES -----------------------------------*/
+/*BANNIERE*/
+.banner {
+  background-image: url("../img/banner.png");
+  height: 638px;
+  width: 100%;
+}
+/*TITRE*/
+.banner h2 {
+  top: 247px;
+  left: 792px;
+  font-size: 80px;
+  width: 765px;
+}
+/* DIV ENGLOBE PARTIE PRODUIT ET MES RESERVATIONS*/
+#container {
+  float: left;
+}
+/*PARTIE GAUCHE (INCLUS FICHIER PRODUITS)*/
+/*SECTION ENGLOBE NAV ET UNCLUE FICHE PRODUIT*/
+#materiel {
+  float: left;
+  width: 80%;
+}
+/*DIV */
+#inclue_prod {
+  margin: auto;
+  width: 80%;
+}
+/*NAV*/
+#materiel nav {
+  height: 40px;
+  margin: 100px auto;
+  width: 1052px;
+}
+/*LIEN UL*/
+#materiel ul {
+  height: 30px;
+}
+/*LIEN LI*/
+#materiel li {
+  float: left;
+  list-style-type: none;
+  margin: 0 40px;
+  text-align: center;
+  width: 165px;
+}
+/*LIEN DE MES ANCRES*/
+#materiel a {
+  color: black;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+/*LIEN DE MES ANCRES AU SURVOL ET CLAVIER*/
+#materiel a:hover,
+#materiel a:focus {
+  color: rgb(13, 58, 142);
+}
+/*PARTIE DROIT (INCLUS FICHIER MES EMPRUNTS)*/
+#mes_reservations {
+  background-color: aquamarine;
+  height: auto;
+  float: right;
+  width: 20%;
+}
+/*------------------------- FIN PAGE ELEVES ----------------------------------*/
+
+/*------------------------- FICHIER PRODUITS ---------------------------------*/
+/*ENTETE TABLEAU*/
+.table thead {
+  background-color: black;
+  color: white;
+}
+/*CELLULE TABLEAU*/
+.table td {
+  text-align: center;
+}
+.table tbody tr:hover,
+.table tbody tr:focus {
+  background-color: rgb(210, 210, 210);
+}
+/*IMAGES PRODUITS TABLEAU*/
+.table img {
+  height: auto;
+  width: 200px;
+}
+/*TITRE H3*/
+h3 {
+  margin: 60px 0 30px 0;
+}
+/*TRAIT EN DESSOUS TITRE*/
+hr {
+  border-top: 1px solid rgb(13, 58, 142);
+  margin: -20px 0 30px 0;
+  width: 100%;
+}
+/*DIV BOUTON VALIDER*/
+.validation_reserv {
+  margin: 50px 0 100px 1068px;
+  width: 150px;
+}
+/*BOUTON VALIDER DE LA PAGE PRODUIT*/
+.validation_reserv input {
+  background-color: black;
+  border-radius: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  width: 150px;
+}
+/*BOUTON VALIDER DE LA PAGE PRODUIT AU SURVOL ET CLAVIER*/
+.validation_reserv input:hover,
+.validation_reserv input:focus {
+  background-color: rgb(13, 58, 142, 0.7);
+  border: 3px solid black;
+  color: white;
+}
+/*------------------------- FIN PAGE PRODUITS --------------------------------*/
+
+/*--------------------------- PAGE FOOTER INDEX----------------------------------*/
+
+/*TEXTE*/
+#footer_index p {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+/*------------------------------ FIN FOOTER ----------------------------------*/
+
+/*--------------------------- PAGE FOOTER GENERAL ----------------------------------*/
+/*BARRE BAS*/
+#footer_general {
+  float: left;
+}
+/*------------------------------ FIN FOOTER ----------------------------------*/
